@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html features</title>
+</head>
+<body>
+    <h1>Simple demonstration a few HTML's features</h1>
+    <nav>
+        <h3 id="navigation">Menu</h3>
+        <ul>
+            <li><a href="#text">Some features for text</a></li>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#list">Lists</a></li>
+            <li><a href="#table">Tables</a></li>
+            <li><a href="#link">Links</a></li>
+            <li><a href="#group">Groups</a></li>
+            <li><a href="#form">Form's elements</a></li>
+            <li><a href="#frame">Frame</a></li>   
+        </ul>
+    </nav>
+    <div id="text">
+        <h3>Some features for text</h3>
+        <p><strong>Canada</strong> is a <i>country in North America</i>. Its <b>ten provinces</b> and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-largest country by total area, with the world's longest coastline. Its border with the United States is the world's longest international land border. The country is characterized by a <del>wide range of both meteorologic</del> and geological regions. <u>With a population</u> of just over 41 million people, it has widely <small>population densities</small>, with the majority residing in urban areas and large areas of the country being sparsely populated. Canada's capital is Ottawa and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.</p>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="picture">
+        <h3>Picture</h3>
+        <p>
+        <img src="introduction-to-canada.jpg" alt="Flag of Canada">
+        </p>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="list">
+        <h3>Lists</h3>
+        Provinces of Canada
+        <ol>
+            <li>Alberta</li>
+            <li>Saskatchewan</li>
+            <li>Ontario</li>
+            <li>Nova Scotia</li>
+            <li>British Columbia</li>
+        </ol>
+        Territories
+        <ul>
+            <li>Northwest Territories</li>
+            <li>Yukon</li>
+            <li>Nunavut</li>
+        </ul>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="table">
+        <h3>Tables</h3>
+        <table style="width: 80%; border-style: dashed;">
+            <caption>Simple table</caption>
+            <tr>
+                <th>First</th>
+                <th>Second</th>
+                <th>Third</th>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color:green;">111111</td>
+                <td>222222</td>
+                <td>333333</td>
+            </tr>
+            <tr>
+                <td>444444</td>
+                <td>555555</td>
+            </tr>
+            <tr>
+                <td>666666</td>
+                <td colspan="2" style="background-color:red;">777777</td>
+            </tr>
+        </table>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="link">
+        <h3>Links</h3>
+        <p><a href="https://google.com" target="_blank">Go to GOOGLE!</a></p>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="group">
+        <h3>Groups</h3>
+        <fieldset>
+            <legend>Technologes for C# developer</legend>
+            <ul>
+                <li>C# leanguage</li>
+                <li>ASP.NET Core</li>
+                <li>EF Core</li>
+                <li>SQL</li>
+            </ul>
+        </fieldset>
+        <p>
+        <details>
+            <summary>Technologes for Front-End</summary>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ol>
+        </details>
+        </p>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="form">
+        <h3>Form's elements</h3>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Random data form</legend>
+                <p>
+                    <label for="FullName">Full Name:</label><br>
+                    <input type="text" name="FullName" id="FullName" required placeholder="Enter your name">
+                </p>
+                <p>
+                    <label for="Birthday">Your Birthday:</label><br>
+                    <input type="date" name="Birthday" id="Birthday">
+                </p>
+                <p>
+                    <label for="Email">Email:</label><br>
+                    <input type="email" name="Email" id="Email" required placeholder="Enter your e-mail">
+                </p>
+                <p>
+                    <label for="Salary">Salary you wish:</label><br>
+                    <input type="number" name="Salary" id="Salary" nim="100" max="1000" step="20" value="300">
+                </p>
+                <p>
+                    <label for="Password">Enter random password:</label><br>
+                    <input type="password" name="Password" id="Password">
+                </p>
+                <p>
+                    <label for="Photo">Load your photo:</label><br>
+                    <input type="file" name="Photo" id="Photo">
+                </p>
+                <p>
+                    <label for="Smartphone">Preference smartphone:</label><br>
+                    <select name="Smartphone" id="Smartphone">
+                        <optgroup label="Apple">
+                            <option value="i10">iPhone 10</option>
+                            <option value="i16">iPhone 16</option>
+                        </optgroup>
+                        <optgroup label="Samsung">
+                            <option value="sa53">A 53</option>
+                            <option value="ss20">S 20</option>
+                            <option value="s20u">S 20 Ultra</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="Comment">Your commet:</label><br>
+                    <textarea name="Comment" id="Comment" cols="50" rows="10" placeholder="Type something..."></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" name="Agreed" id="Agreed" value="Y" checked>
+                    <label for="Agreed">I agree</label>
+                </p>
+                <p>
+                    <button type="reset">Reset</button>
+                </p>
+
+            </fieldset>
+        </form>
+        <a href="#navigation">Back to main menu</a>
+    </div>
+    <div id="frame">
+        <h3>Frame</h3>
+        <p>
+            <iframe src="https://en.wikipedia.org/wiki/Canada" frameborder="1" width="100%" height="400px"></iframe>
+        </p>
+        <a href="#navigation">Back to main menu</a><br>
+    </div>
+</body>
+</html>
